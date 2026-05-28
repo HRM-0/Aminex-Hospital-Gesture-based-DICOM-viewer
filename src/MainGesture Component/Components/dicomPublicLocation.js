@@ -1,0 +1,1 @@
+export const dicomPublicLocation = "dicom/Long one.dcm"

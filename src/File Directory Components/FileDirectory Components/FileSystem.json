@@ -1,0 +1,544 @@
+[
+  {
+    "id": "root",
+    "name": "Hospital Records",
+    "date": "2023-10-27",
+    "type": "folder",
+    "children": [
+      {
+        "id": "pat_001",
+        "name": "Adams, John (ID: 1001)",
+        "date": "2023-01-15",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_001_labs",
+            "name": "Lab Results",
+            "date": "2023-01-20",
+            "type": "folder",
+            "children": [
+              { "id": "doc_001", "name": "CBC_Panel.pdf", "date": "2023-01-20", "type": "pdf", "size": "1.2 MB" },
+              { "id": "doc_002", "name": "Lipid_Profile.pdf", "date": "2023-01-22", "type": "pdf", "size": "1.5 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_002",
+        "name": "Baker, Sarah (ID: 1002)",
+        "date": "2023-02-10",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_002_rad",
+            "name": "Radiology",
+            "date": "2023-02-12",
+            "type": "folder",
+            "children": [
+              { "id": "img_001", "name": "XRay_Tibia.dicom", "date": "2023-02-12", "type": "dicom", "size": "45 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_003",
+        "name": "Clark, Michael (ID: 1003)",
+        "date": "2023-03-05",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_003_cardio",
+            "name": "Cardiology",
+            "date": "2023-03-06",
+            "type": "folder",
+            "children": [
+              { "id": "vid_001", "name": "Angiogram.mp4", "date": "2023-03-06", "type": "video", "size": "120 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_004",
+        "name": "Davis, Emily (ID: 1004)",
+        "date": "2023-04-12",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_004_neuro",
+            "name": "Neurology",
+            "date": "2023-04-14",
+            "type": "folder",
+            "children": [
+              { "id": "doc_003", "name": "MRI_Brain_Report.pdf", "date": "2023-04-14", "type": "pdf", "size": "2.1 MB" },
+              { "id": "img_002", "name": "MRI_Sequence_T1.dicom", "date": "2023-04-14", "type": "dicom", "size": "200 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_005",
+        "name": "Evans, Robert (ID: 1005)",
+        "date": "2023-05-01",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_005_gp",
+            "name": "General Practice",
+            "date": "2023-05-01",
+            "type": "folder",
+            "children": [
+              { "id": "doc_004", "name": "Annual_Physical.pdf", "date": "2023-05-01", "type": "pdf", "size": "3.0 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_006",
+        "name": "Frank, Jessica (ID: 1006)",
+        "date": "2023-05-18",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_006_ortho",
+            "name": "Orthopedics",
+            "date": "2023-05-20",
+            "type": "folder",
+            "children": [
+              { "id": "img_003", "name": "XRay_Shoulder.dicom", "date": "2023-05-20", "type": "dicom", "size": "50 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_007",
+        "name": "Garcia, Luis (ID: 1007)",
+        "date": "2023-06-02",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_007_onc",
+            "name": "Oncology",
+            "date": "2023-06-05",
+            "type": "folder",
+            "children": [
+              { "id": "doc_005", "name": "Biopsy_Results.pdf", "date": "2023-06-05", "type": "pdf", "size": "1.1 MB" },
+              { "id": "doc_006", "name": "Treatment_Plan.docx", "date": "2023-06-06", "type": "docx", "size": "0.5 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_008",
+        "name": "Harris, Anna (ID: 1008)",
+        "date": "2023-06-15",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_008_derm",
+            "name": "Dermatology",
+            "date": "2023-06-15",
+            "type": "folder",
+            "children": [
+              { "id": "img_004", "name": "Skin_Lesion_Macro.jpg", "date": "2023-06-15", "type": "jpg", "size": "4.2 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_009",
+        "name": "Ivanov, Dmitri (ID: 1009)",
+        "date": "2023-06-20",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_009_er",
+            "name": "Emergency",
+            "date": "2023-06-20",
+            "type": "folder",
+            "children": [
+              { "id": "doc_007", "name": "Triage_Notes.pdf", "date": "2023-06-20", "type": "pdf", "size": "0.8 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_010",
+        "name": "Jones, Peter (ID: 1010)",
+        "date": "2023-07-01",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_010_cardio",
+            "name": "Cardiology",
+            "date": "2023-07-01",
+            "type": "folder",
+            "children": [
+              { "id": "doc_008", "name": "Stress_Test_Results.pdf", "date": "2023-07-01", "type": "pdf", "size": "2.8 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_011",
+        "name": "Kelly, Grace (ID: 1011)",
+        "date": "2023-07-05",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_011_peds",
+            "name": "Pediatrics",
+            "date": "2023-07-05",
+            "type": "folder",
+            "children": [
+              { "id": "doc_009", "name": "Vaccination_Record.pdf", "date": "2023-07-05", "type": "pdf", "size": "1.0 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_012",
+        "name": "Lee, Chang (ID: 1012)",
+        "date": "2023-07-12",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_012_opt",
+            "name": "Ophthalmology",
+            "date": "2023-07-12",
+            "type": "folder",
+            "children": [
+              { "id": "img_005", "name": "Retinal_Scan_OD.png", "date": "2023-07-12", "type": "png", "size": "15 MB" },
+              { "id": "img_006", "name": "Retinal_Scan_OS.png", "date": "2023-07-12", "type": "png", "size": "15 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_013",
+        "name": "Miller, Thomas (ID: 1013)",
+        "date": "2023-07-20",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_013_endo",
+            "name": "Endocrinology",
+            "date": "2023-07-20",
+            "type": "folder",
+            "children": [
+              { "id": "doc_010", "name": "A1C_Trend_Report.pdf", "date": "2023-07-20", "type": "pdf", "size": "0.6 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_014",
+        "name": "Nelson, Olivia (ID: 1014)",
+        "date": "2023-08-01",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_014_obgyn",
+            "name": "OBGYN",
+            "date": "2023-08-01",
+            "type": "folder",
+            "children": [
+              { "id": "img_007", "name": "Ultrasound_20wk.dicom", "date": "2023-08-01", "type": "dicom", "size": "65 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_015",
+        "name": "O'Connor, Liam (ID: 1015)",
+        "date": "2023-08-05",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_015_pt",
+            "name": "Physical Therapy",
+            "date": "2023-08-05",
+            "type": "folder",
+            "children": [
+              { "id": "doc_011", "name": "Rehab_Plan_Knee.pdf", "date": "2023-08-05", "type": "pdf", "size": "1.3 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_016",
+        "name": "Patel, Priya (ID: 1016)",
+        "date": "2023-08-10",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_016_ent",
+            "name": "ENT",
+            "date": "2023-08-10",
+            "type": "folder",
+            "children": [
+              { "id": "doc_012", "name": "Audiogram.pdf", "date": "2023-08-10", "type": "pdf", "size": "0.9 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_017",
+        "name": "Quinn, David (ID: 1017)",
+        "date": "2023-08-15",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_017_psych",
+            "name": "Psychiatry",
+            "date": "2023-08-15",
+            "type": "folder",
+            "children": [
+              { "id": "doc_013", "name": "Evaluation_Notes.pdf", "date": "2023-08-15", "type": "pdf", "size": "0.5 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_018",
+        "name": "Rodriguez, Sofia (ID: 1018)",
+        "date": "2023-08-20",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_018_rheum",
+            "name": "Rheumatology",
+            "date": "2023-08-20",
+            "type": "folder",
+            "children": [
+              { "id": "doc_014", "name": "Autoimmune_Panel.pdf", "date": "2023-08-20", "type": "pdf", "size": "1.8 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_019",
+        "name": "Smith, William (ID: 1019)",
+        "date": "2023-08-25",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_019_uro",
+            "name": "Urology",
+            "date": "2023-08-25",
+            "type": "folder",
+            "children": [
+              { "id": "doc_015", "name": "PSA_Results.pdf", "date": "2023-08-25", "type": "pdf", "size": "0.7 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_020",
+        "name": "Taylor, Emma (ID: 1020)",
+        "date": "2023-09-01",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_020_pulm",
+            "name": "Pulmonology",
+            "date": "2023-09-01",
+            "type": "folder",
+            "children": [
+              { "id": "doc_016", "name": "Spirometry_Test.pdf", "date": "2023-09-01", "type": "pdf", "size": "2.2 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_021",
+        "name": "Upton, Charles (ID: 1021)",
+        "date": "2023-09-05",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_021_gastro",
+            "name": "Gastroenterology",
+            "date": "2023-09-05",
+            "type": "folder",
+            "children": [
+              { "id": "img_008", "name": "Endoscopy_Snapshot.jpg", "date": "2023-09-05", "type": "jpg", "size": "3.5 MB" },
+              { "id": "doc_017", "name": "Colonoscopy_Report.pdf", "date": "2023-09-06", "type": "pdf", "size": "1.8 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_022",
+        "name": "Vance, Julia (ID: 1022)",
+        "date": "2023-09-10",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_022_allergy",
+            "name": "Allergy & Immunology",
+            "date": "2023-09-10",
+            "type": "folder",
+            "children": [
+              { "id": "doc_018", "name": "Allergy_Skin_Test.pdf", "date": "2023-09-10", "type": "pdf", "size": "1.4 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_023",
+        "name": "Williams, George (ID: 1023)",
+        "date": "2023-09-15",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_023_nephro",
+            "name": "Nephrology",
+            "date": "2023-09-15",
+            "type": "folder",
+            "children": [
+              { "id": "doc_019", "name": "Kidney_Function_Test.pdf", "date": "2023-09-15", "type": "pdf", "size": "1.1 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_024",
+        "name": "Xavier, Francis (ID: 1024)",
+        "date": "2023-09-20",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_024_id",
+            "name": "Infectious Disease",
+            "date": "2023-09-20",
+            "type": "folder",
+            "children": [
+              { "id": "doc_020", "name": "Viral_Load_Graph.pdf", "date": "2023-09-20", "type": "pdf", "size": "0.9 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_025",
+        "name": "Young, Hannah (ID: 1025)",
+        "date": "2023-09-25",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_025_diet",
+            "name": "Dietary",
+            "date": "2023-09-25",
+            "type": "folder",
+            "children": [
+              { "id": "doc_021", "name": "Nutritional_Plan.docx", "date": "2023-09-25", "type": "docx", "size": "0.4 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_026",
+        "name": "Zhang, Wei (ID: 1026)",
+        "date": "2023-10-01",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_026_surg",
+            "name": "Surgery",
+            "date": "2023-10-01",
+            "type": "folder",
+            "children": [
+              { "id": "doc_022", "name": "Pre-Op_Checklist.pdf", "date": "2023-10-01", "type": "pdf", "size": "0.8 MB" },
+              { "id": "doc_023", "name": "Operative_Report.pdf", "date": "2023-10-02", "type": "pdf", "size": "3.5 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_027",
+        "name": "Allen, Marcus (ID: 1027)",
+        "date": "2023-10-05",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_027_labs",
+            "name": "Lab Results",
+            "date": "2023-10-05",
+            "type": "folder",
+            "children": [
+              { "id": "doc_024", "name": "Blood_Glucose_Log.csv", "date": "2023-10-05", "type": "csv", "size": "0.2 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_028",
+        "name": "Brown, Chloe (ID: 1028)",
+        "date": "2023-10-10",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_028_pharm",
+            "name": "Pharmacy",
+            "date": "2023-10-10",
+            "type": "folder",
+            "children": [
+              { "id": "doc_025", "name": "Medication_Reconciliation.pdf", "date": "2023-10-10", "type": "pdf", "size": "1.0 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_029",
+        "name": "Campbell, Scott (ID: 1029)",
+        "date": "2023-10-15",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_029_gen",
+            "name": "Genetics",
+            "date": "2023-10-15",
+            "type": "folder",
+            "children": [
+              { "id": "doc_026", "name": "Genetic_Counseling_Summary.pdf", "date": "2023-10-15", "type": "pdf", "size": "2.0 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_030",
+        "name": "Donovan, Kelly (ID: 1030)",
+        "date": "2023-10-20",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_030_rehab",
+            "name": "Rehabilitation",
+            "date": "2023-10-20",
+            "type": "folder",
+            "children": [
+              { "id": "vid_002", "name": "Gait_Analysis.mp4", "date": "2023-10-20", "type": "video", "size": "250 MB" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pat_031",
+        "name": "Edwards, Brian (ID: 1031)",
+        "date": "2023-10-25",
+        "type": "folder",
+        "children": [
+          {
+            "id": "dir_031_admin",
+            "name": "Administration",
+            "date": "2023-10-25",
+            "type": "folder",
+            "children": [
+              { "id": "doc_027", "name": "Consent_Forms.pdf", "date": "2023-10-25", "type": "pdf", "size": "3.2 MB" },
+              { "id": "doc_028", "name": "Insurance_Card.jpg", "date": "2023-10-25", "type": "jpg", "size": "1.5 MB" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
