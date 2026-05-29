@@ -1,4 +1,5 @@
 import React from "react";
+import HelpPanel from "./HelpPanel";
 import { getRenderingEngine } from "@cornerstonejs/core";
 // 1. IMPORT the correct shared IDs from Xray
 import { RENDERING_ENGINE_ID, VIEWPORT_ID } from "./Xray";
@@ -83,35 +84,35 @@ export default function Toolbar() {
   };
 
   // 7. COLOR: Toggle Colormap (False-color vs Grayscale)
-const handleCmap = () => {
-  const viewport = getViewport();
-  if (!viewport) return;
+  const handleCmap = () => {
+    const viewport = getViewport();
+    if (!viewport) return;
 
-  const properties = viewport.getProperties();
+    const properties = viewport.getProperties();
 
-  // Check current colormap
-  const currentColormap = properties.colormap?.name;
+    // Check current colormap
+    const currentColormap = properties.colormap?.name;
 
-  if (currentColormap) {
-    // Remove colormap (back to grayscale)
-    viewport.setProperties({
-      colormap: undefined,
-    });
+    if (currentColormap) {
+      // Remove colormap (back to grayscale)
+      viewport.setProperties({
+        colormap: undefined,
+      });
 
-    console.log("Colormap removed");
-  } else {
-    // Apply colormap
-    viewport.setProperties({
-      colormap: {
-        name: "hotIron",
-      },
-    });
+      console.log("Colormap removed");
+    } else {
+      // Apply colormap
+      viewport.setProperties({
+        colormap: {
+          name: "hotIron",
+        },
+      });
 
-    console.log("hotIron colormap applied");
-  }
+      console.log("hotIron colormap applied");
+    }
 
-  viewport.render();
-};
+    viewport.render();
+  };
 
   // 8. COLOR: Invert Grayscale
   const handleInvert = () => {
@@ -276,21 +277,7 @@ const handleCmap = () => {
         Lock
       </button>
 
-      <button className="tool-btn">
-        <svg
-          width="13"
-          height="13"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-        >
-          <circle cx="12" cy="12" r="10" />
-          <path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3" />
-          <line x1="12" y1="17" x2="12.01" y2="17" />
-        </svg>
-        Help
-      </button> 
+       <HelpPanel />
     </div>
   );
 }

@@ -1,1 +1,1 @@
-export const dicomPublicLocation = "dicom/Long one.dcm"
+export const dicomPublicLocation = "dicom/Long one 2.dcm"

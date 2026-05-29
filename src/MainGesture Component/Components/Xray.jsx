@@ -1,9 +1,10 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useContext } from "react";
 import { init as coreInit, RenderingEngine, Enums } from "@cornerstonejs/core";
 import { init as dicomImageLoaderInit } from "@cornerstonejs/dicom-image-loader";
 import { getDicomInfo } from "./dicomParser.util";
 import { dicomPublicLocation } from "./dicomPublicLocation";
-import { useGestureMapper } from "./useGestureMapper";  
+import { useGestureMapper } from "./useGestureMapper";
+import { LoadingContext } from "./LoadingContext.jsx";  
 
 const imageId = `wadouri:/${dicomPublicLocation}`;
 
@@ -30,6 +31,7 @@ const initCornerstone = () => {
 export default function Xray({ gestures }) { 
   const elementRef = useRef(null);
   const engineRef = useRef(null);
+  const { completeLoading } = useContext(LoadingContext);
   
   // 1. CHANGE: Use state instead of a ref so changes trigger a re-render
   const [viewport, setViewport] = useState(null); 
@@ -91,6 +93,7 @@ export default function Xray({ gestures }) {
         if (isCancelled) return;
 
         activeViewport.render();
+        completeLoading(); // Signal loading complete
         console.log("Render completed successfully!");
       } catch (err) {
         if (!isCancelled) {
@@ -117,7 +120,7 @@ export default function Xray({ gestures }) {
         engineRef.current = null;
       }
     };
-  }, [isInitialized]);
+  }, [completeLoading, isInitialized]);
 
   // 4. CHANGE: Pass the reactive state value directly to the hook
   useGestureMapper({

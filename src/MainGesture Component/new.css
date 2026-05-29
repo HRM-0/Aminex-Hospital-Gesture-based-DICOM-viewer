@@ -224,7 +224,10 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 0;
+    /* modern Firefox */
     scrollbar-width: none;
+    /* Internet Explorer 10+ and legacy Edge */
+    -ms-overflow-style: none;
 }
 
 aside::-webkit-scrollbar {
