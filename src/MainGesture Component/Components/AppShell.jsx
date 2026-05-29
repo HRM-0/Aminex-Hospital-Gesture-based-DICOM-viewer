@@ -2,25 +2,22 @@ import ViewportMain from "./ViewportMain";
 import AsideMain from "./AsideMain";
 import Header from "./Header";
 import { useGestureRecognizer } from "./useGestureRecognizer";
+import React from "react";
 
-function next() {
-  console.log(true);
-}
-function getpicture() {
-  console.log(true);
-}
+
 
 export default function AppShell() {
-const gestures = useGestureRecognizer();
+  const gestures = useGestureRecognizer();
+  const [isLocked, setIsLocked] = React.useState(false); // Lifted state
 
   return (
     <div className="app">
       <Header />
       <AsideMain />
       <ViewportMain
-        next={() => next()}
-        getPicture={() => getpicture()}
         gestures={gestures}
+        isLocked={isLocked}
+        setIsLocked={setIsLocked}
       />
     </div>
   );

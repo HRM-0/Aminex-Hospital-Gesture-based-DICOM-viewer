@@ -3,7 +3,7 @@ import { init as coreInit, RenderingEngine, Enums } from "@cornerstonejs/core";
 import { init as dicomImageLoaderInit } from "@cornerstonejs/dicom-image-loader";
 import { getDicomInfo } from "./dicomParser.util";
 import { dicomPublicLocation } from "./dicomPublicLocation";
-import { useGestureMapper } from "./useGestureMapper"; 
+import { useGestureMapper } from "./useGestureMapper";  
 
 const imageId = `wadouri:/${dicomPublicLocation}`;
 
@@ -27,7 +27,7 @@ const initCornerstone = () => {
   return initPromise;
 };
 
-export default function DicomViewer({ gestures }) { 
+export default function Xray({ gestures }) { 
   const elementRef = useRef(null);
   const engineRef = useRef(null);
   

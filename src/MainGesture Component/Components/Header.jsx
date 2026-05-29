@@ -1,17 +1,31 @@
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 export default function Header() {
   const navigate = useNavigate();
-  let h,
-    m,
-    s = "00";
-  function updateClock() {
+  const [time, setTime] = useState(() => {
     const now = new Date();
-    h = String(now.getHours()).padStart(2, "0");
-    m = String(now.getMinutes()).padStart(2, "0");
-    s = String(now.getSeconds()).padStart(2, "0");
-  }
-  updateClock();
-  setInterval(updateClock, 1000);
+    return {
+      h: String(now.getHours()).padStart(2, "0"),
+      m: String(now.getMinutes()).padStart(2, "0"),
+      s: String(now.getSeconds()).padStart(2, "0"),
+    };
+  });
+
+  useEffect(() => {
+    function updateClock() {
+      const now = new Date();
+      setTime({
+        h: String(now.getHours()).padStart(2, "0"),
+        m: String(now.getMinutes()).padStart(2, "0"),
+        s: String(now.getSeconds()).padStart(2, "0"),
+      });
+    }
+
+    const timer = setInterval(updateClock, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <header>
       <div onClick={() => navigate("/files")} className="header-brand">
@@ -28,7 +42,7 @@ export default function Header() {
       </div>
 
       <div className="header-clock" id="clock">
-        {h} : {m} : {s}
+        {time.h} : {time.m} : {time.s}
       </div>
 
       <div className="header-actions">
